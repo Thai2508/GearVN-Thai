@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    height: 2000px;
+}
+
+.content {
+    width: 100%;
+}
+
+.content::before {
+    display: block;
+    content: " ";
+}
+
+.content::after {
+    display: block;
+    content: " ";
+    clear: both;
+}
+
+
+
+.row {
+    margin: 0 19px;
+    padding: 0 15px;
+}
+
+.dp-flex {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+}
+
+.mg-left-16{
+    margin-left: 16px;
+}
+
+.mg-left-8{
+    margin-left: 8px;
+}
+
+.mg-right-4 {
+    margin-right: 4px;
+}
+
+.pd-t-b-8 {
+    padding: 8px 15px;
+}
+
+.pd-8 {
+    padding: 8px;
+}
+
+.radius-4 {
+    border-radius: 4px;
+}
+
+/* Header */
+.header .top-fixed {
+    background-color: #f1f0f1;
+    /* position: fixed; */
+}
+
+.bn {
+    background: url('./assets/imgs/bn-menu.webp') center no-repeat;
+    height: 50px;
+    cursor: pointer;
+}
+
+.content-header {
+    border-bottom: 1px solid #d4d4d4;
+    height: 100%;
+}
+
+.logo-gear {
+    padding-left: 12px;
+    flex: 0.32;
+}
+
+.beside-logo {
+   flex: 2;
+}
+
+.beside-logo-up {
+    margin-left: 5px;
+}
+
+.up-left {
+    flex: 1;
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+}
+
+.up-left input {
+    border: none;
+    outline: none;
+    width: calc(100% - 20px);
+}
+
+.up-left span {
+    font-size: 17px;
+}
+
+.up-left span:hover {
+    cursor: pointer;
+    color: #ea1c00;;
+}
+
+.up-righ {
+    flex: 1;
+    font-weight: 650;
+    justify-content: space-around;
+    font-size: 13px;
+}
+
+.right-items {
+    align-items: center;
+    margin-left: 5px;
+}
+
+.right-items:hover {
+    cursor: pointer;
+    color: #ea1c00;
+}
+
+.right-items img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.beside-logo-down {
+   padding-top: 4px;
+}
+
+.down-item {
+    padding-right: 25px;
+    border-right: 2px solid #ea1c00;
+    margin-right: 25px;
+    align-items: center;
+    align-items: center;
+}
+
+.down-item img{
+    width: 18px;
+    height: 18px;
+}
+
+.down-item:last-child {
+    border-right: none;
+}
+
+.down-item p {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: red;
+    cursor: pointer;
+}
+
+.danh-muc {
+    padding: 8px 12px;
+    background-color: #505050;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.danh-muc p {
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+.danh-muc ion-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.huong-dan img, .chinh-sach img {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.huong-dan, .chinh-sach {
+    border: 1px solid #505050;
+    flex: 1;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.huong-dan:hover, .chinh-sach:hover {
+    background-color: red;
+    cursor: pointer;
+    color: #fff;
+}
+
